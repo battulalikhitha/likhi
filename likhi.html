@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>NAvBar using flexbox</title>
+<style>
+*{
+background-color: black;
+}
+h1{
+    background-color: rgb(113, 36, 72);
+    color: black;
+    text-align: center;
+}
+p{
+    color: white;
+    text-align: center;
+}
+.flex-container {
+  display: flex;
+  background-color: rgb(26, 59, 93);
+  margin: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1; 
+  flex-shrink: 0.6;
+  margin: 75px;
+  padding: 5px;
+  font-size: 55px;
+}
+#a:hover,#b:hover,#c:hover,#d:hover,a:hover{
+    background-color: pink;
+}
+a{
+    text-decoration: none;
+    background-color:white ;
+}
+</style>
+</head>
+<body>
+
+<h1>Navbar</h1>
+
+<div class="flex-container">
+  <div id="a"><a href="./hello.html">Home</a></div>
+  <div id="b"><a href="./about.html">About</a></div>
+  <div id="c"><a href="./details.html">Details</a></div>  
+  <div id="d"><a href="./contact.html">Contact</a></div>
+</div>
+</body>
+</html>
